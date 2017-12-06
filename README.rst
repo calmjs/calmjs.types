@@ -3,12 +3,12 @@ calmjs.types
 
 A collection of types (mostly exception classes) for use with |calmjs|_.
 
-.. image:: https://travis-ci.org/calmjs/calmjs.types.svg?branch=master
+.. image:: https://travis-ci.org/calmjs/calmjs.types.svg?branch=1.0.x
     :target: https://travis-ci.org/calmjs/calmjs.types
-.. image:: https://ci.appveyor.com/api/projects/status/iyrgqhraj2qjn1cl/branch/master?svg=true
-    :target: https://ci.appveyor.com/project/metatoaster/calmjs-types/branch/master
-.. image:: https://coveralls.io/repos/github/calmjs/calmjs.types/badge.svg?branch=master
-    :target: https://coveralls.io/github/calmjs/calmjs.types?branch=master
+.. image:: https://ci.appveyor.com/api/projects/status/iyrgqhraj2qjn1cl/branch/1.0.x?svg=true
+    :target: https://ci.appveyor.com/project/metatoaster/calmjs-types/branch/1.0.x
+.. image:: https://coveralls.io/repos/github/calmjs/calmjs.types/badge.svg?branch=1.0.x
+    :target: https://coveralls.io/github/calmjs/calmjs.types?branch=1.0.x
 
 .. |calmjs| replace:: ``calmjs``
 .. |calmjs.types| replace:: ``calmjs.types``
