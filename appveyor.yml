@@ -1,0 +1,19 @@
+environment:
+  matrix:
+    - PYTHON: "C:\\Python27"
+    - PYTHON: "C:\\Python36"
+
+install:
+  - "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+  - ps: Install-Product node $env:nodejs_version
+  - "%PYTHON%\\python.exe -m pip install coverage"
+
+test_script:
+  - python setup.py develop
+  - coverage run --include=src\* -m unittest calmjs.types.tests.make_suite
+  - coverage report -m
+
+artifacts:
+  - path: dist\*
+
+build: off

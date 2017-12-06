@@ -1,0 +1,23 @@
+sudo: false
+matrix:
+  include:
+    - language: python
+      python: 2.7
+    - language: python
+      python: 3.6
+
+install:
+  - pip install coverage flake8
+  - python setup.py develop
+script:
+  - flake8
+  - coverage run --include=src/* -m unittest calmjs.types.tests.make_suite
+  - coverage report -m
+after_success:
+  - pip install coveralls
+  - coveralls
+branches:
+  only:
+    - testing
+    - master
+    - 1.0.x
