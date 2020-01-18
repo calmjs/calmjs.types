@@ -1,10 +1,15 @@
 sudo: false
+dist: xenial
 matrix:
   include:
     - language: python
       python: 2.7
     - language: python
       python: 3.6
+    - language: python
+      python: 3.7
+    - language: python
+      python: 3.8
 
 install:
   - pip install coverage flake8
