@@ -41,7 +41,7 @@ the current Python environment.
 
 .. code:: sh
 
-    $ pip install calmjs.parse
+    $ pip install calmjs.types
 
 
 Contribute
